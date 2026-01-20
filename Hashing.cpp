@@ -8,7 +8,7 @@ int main() {
 
     for(int i = 0; i < n; i++) {
         hash[arr[i]]++;
-    }
+    } 
 
     int queries[5] = {1, 3, 4, 2, 10};
 
