@@ -2,10 +2,8 @@
 // #include <iostream>
 using namespace std;
 
-int main()
+void SelectionSort(int arr[])
 {
-    int arr[5] = {7, 5, 9, 2, 8};
-
     for (int i = 0; i < 5; i++)
     {
         for (int j = i; j < 5; j++)
@@ -18,9 +16,19 @@ int main()
             }
         }
     }
+}
 
+void printArr(int arr[])
+{
+    SelectionSort(arr);
     for (int j = 0; j < 5; j++)
     {
         cout << arr[j];
     }
+}
+
+int main()
+{
+    int arr[5] = {7, 5, 9, 2, 8};
+    printArr(arr);
 }
